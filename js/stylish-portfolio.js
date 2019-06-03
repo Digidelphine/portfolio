@@ -41,6 +41,7 @@
   });
 
 })(jQuery); // End of use strict
+  
 
 // Disable Google Maps scrolling
 // See http://stackoverflow.com/a/25904582/1607849
