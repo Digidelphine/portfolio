@@ -277,11 +277,21 @@ h6 {
   font-size: 1.2rem;
 }
 
+.btn1{
+  margin-top: 20%;
+}
+@media (max-width: 575.98px) {
+  .btn1{
+    margin-top: 60%;
+  }
+}
+
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
     margin: 0;
   }
+  
   .portfolio-item .caption {
     -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
     -webkit-clip-path: inset(0px);
@@ -398,7 +408,7 @@ a:hover, a:focus, a:active {
 	
 	/*centers it in the .banner*/
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
