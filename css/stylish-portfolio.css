@@ -277,14 +277,10 @@ h6 {
   font-size: 1.2rem;
 }
 
-.btn1{
-  margin-top: 20%;
-}
-@media (max-width: 575.98px) {
-  .btn1{
-    margin-top: 60%;
-  }
-}
+
+
+/* smartphone < 576px */
+@media (max-width: 575.98px) {}
 
 @media (min-width: 992px) {
   .portfolio-item {
@@ -386,6 +382,10 @@ a:hover, a:focus, a:active {
   font-weight: 700;
 }
 
+.btn1{
+  margin-top: 30px;
+}
+
 .bg-primary {
   background-color: #1D809F !important;
 }
@@ -399,17 +399,8 @@ a:hover, a:focus, a:active {
 }
 
 .typed_wrap {
-	display: block;
-	border: 4px solid #ecf0f1;
-	width: auto;
-	height: auto;
-  padding: 30px;
-  margin-top: 2%;
-	
-	/*centers it in the .banner*/
-	position: absolute;
-	top: 55%;
-	left: 50%;
+  color: #fff;
+  display: contents;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
@@ -417,8 +408,18 @@ a:hover, a:focus, a:active {
 	transform: translate(-50%,-50%);
 }
 
-.typed_wrap h1 {
-	display: inline;
+.test1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.junior{
+  background-color:white;
+  padding: 14px 14px 6px 10px;
+  display: flex;
+  align-items: center;
 }
 
 /*Add custom cursor so it auto inherits font styles*/
