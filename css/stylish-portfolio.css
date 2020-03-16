@@ -210,15 +210,12 @@ h6 {
 }
 
 .service-icon {
-  background-color: #fff;
   color: #1D809F;
-  height: 7rem;
-  width: 7rem;
+  height: 10rem;
+  width: 10rem;
   display: block;
-  line-height: 7.5rem;
-  font-size: 2.25rem;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  line-height: 10rem;
+  font-size: 3rem;
 }
 
 .callout {
@@ -241,8 +238,6 @@ h6 {
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
 }
 
 .portfolio-item .caption {
@@ -278,9 +273,10 @@ h6 {
 }
 
 
-
 /* smartphone < 576px */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+
+}
 
 @media (min-width: 992px) {
   .portfolio-item {
@@ -288,32 +284,25 @@ h6 {
     margin: 0;
   }
   
-  .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
   .portfolio-item .caption .caption-content {
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
+    margin-top: 5rem;
   }
+  
   .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
+    transition: all 0.5s ease;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
   }
-  .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
+ 
   .portfolio-item:hover .caption-content {
     color: rgba(255, 255, 255, 1);
   }
@@ -382,9 +371,7 @@ a:hover, a:focus, a:active {
   font-weight: 700;
 }
 
-.btn1{
-  margin-top: 30px;
-}
+/* 1er overwrite du style bootstrap */
 
 .bg-primary {
   background-color: #1D809F !important;
@@ -399,7 +386,8 @@ a:hover, a:focus, a:active {
 }
 
 .typed_wrap {
-  color: #fff;
+  color: rgba(47, 47, 47, 0.4);
+  font-size: 1.4em;
   display: contents;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
@@ -408,22 +396,28 @@ a:hover, a:focus, a:active {
 	transform: translate(-50%,-50%);
 }
 
-.test1 {
+.content_wrap {
+  padding: 10px;
+}
+
+.display-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
 }
 
-.junior{
-  background-color:white;
-  padding: 14px 14px 6px 10px;
+.junior {
+  border-radius: 0 15px 15px 0;
+  padding: 20px 24px 6px 14px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 /*Add custom cursor so it auto inherits font styles*/
 .element::after {
+  font-size: 2rem;
 	content: '|';
 	display: inline;
 	-webkit-animation: blink 0.7s infinite;
@@ -434,7 +428,7 @@ a:hover, a:focus, a:active {
 /*Removes cursor that comes with typed.js*/
 .typed-cursor{
   opacity: 0;
-	display: none;
+  display: none;
 }
 /*Custom cursor animation*/
 @keyframes blink{
@@ -451,4 +445,86 @@ a:hover, a:focus, a:active {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+.fluidtest {
+  position:relative;
+  display:block;
+}
+
+#about, #services {
+  background-color: #f6f6f6;
+}
+
+.colorGreyBG {
+  background-color: #f6f6f6;
+}
+
+.colorGreyPrimary {
+  color: #919393;
+}
+.colorGreySecondary {
+  color: #a39699;
+}
+
+.bgPrimary {
+  background-color: #1ca9bc;
+}
+
+.head-box {
+  display: flex;
+  justify-content: center;
+}
+
+.content-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  outline: 4px double #FFFFFF;
+  outline-offset: 8px;
+  height: 20vh;
+  min-width: 300px;
+  margin: 20px 0;
+}
+
+
+.container-about {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.img-about {
+  width: 50%;
+  min-height: 600px;
+  min-width: 400px;
+  background-clip: border-box;
+  background-image: url(../img/avatar.jpg);
+  background-position: center;
+}
+
+.text-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5rem;
+  background-color: #f6f6f6;
+  width: 50%;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+@media(max-width: 799px) {
+
+  .img-about {
+    width: 100%;
+    height: 80%;
+  }
+  .text-about {
+    width: 100%;
+  }
+
 }

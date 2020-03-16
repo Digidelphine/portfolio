@@ -1,12 +1,11 @@
-document.addEventListener('DOMContentLoaded', function(){
-    console.log("la page est chargée !");
-
+// Typo dynamique
+document.addEventListener('DOMContentLoaded', function() {
     // Typed lib
-    var options = {
+    const options = {
       strings: ["Designer UX/UI", "Community Manager", "Social Manager"],
       typeSpeed: 100,
       loop: true
     }
     
-    var typed = new Typed(".element", options);
+    let typed = new Typed(".element", options);
 })
