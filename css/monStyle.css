@@ -1,0 +1,20 @@
+/* projet 1 LE SECOND EMPIRE */
+.portfolio-item:hover .caption-content .projet1 {
+    color: rgba(123, 92, 230, 1);
+}
+
+/* projet 2 BOOKER */
+.portfolio-item:hover .caption-content .projet2 {
+color: rgba(123, 92, 230, 1);
+}
+
+/* projet 3 YAPLA */
+.portfolio-item:hover .caption-content .projet3 {
+    color: rgba(238, 158, 18, 1)
+}
+
+/* projet 4 LASUR */
+.portfolio-item:hover .caption-content .projet4 {
+color: rgba(123, 92, 230, 1);
+}
+

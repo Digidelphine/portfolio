@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Typed lib
     const options = {
-      strings: ["Designer UX/UI", "Community Manager", "Social Manager"],
+      strings: ["Designer UX/UI", "Social Manager", "Webmarketing"],
       typeSpeed: 100,
       loop: true
     }
