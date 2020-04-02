@@ -18,3 +18,7 @@ color: rgba(123, 92, 230, 1);
 color: rgba(123, 92, 230, 1);
 }
 
+.modal-lg {
+    max-width: 7O%;
+}
+
