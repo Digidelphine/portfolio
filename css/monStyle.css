@@ -22,3 +22,27 @@ color: rgba(123, 92, 230, 1);
     max-width: 7O%;
 }
 
+.btn-projet-1 {
+    background-color: #dda55a ;
+    border-color: #dda55a;
+    color: #FFF;
+}
+
+.btn-projet-2 {
+    background-color: #a581fa;
+    border-color: #a581fa;
+    color: #FFF;
+}
+
+.btn-projet-3 {
+    background-color: #fe7100;
+    border-color: #fe7100;
+    color: #FFF;
+}
+
+.btn-projet-4 {
+    background-color: rgba(123, 92, 230, 1);
+    border-color: rgba(123, 92, 230, 1);
+    color: #FFF;
+}
+
